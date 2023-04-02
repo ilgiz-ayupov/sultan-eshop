@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Бытовая химия",
+    "img": "/assets/images/categories/category-1.png",
+    "slug": "household-chemicals"
+  },
+  {
+    "name": "Косметика и гигиена",
+    "img": "/assets/images/categories/category-2.png",
+    "slug": "cosmetics-hygiene"
+  },
+  {
+    "name": "Товары для дома",
+    "img": "/assets/images/categories/category-3.png",
+    "slug": "household-goods"
+  },
+  {
+    "name": "Товары для детей и мам",
+    "img": "/assets/images/categories/category-4.png",
+    "slug": "for-children-mothers"
+  },
+  {
+    "name": "Посуда",
+    "img": "/assets/images/categories/category-5.png",
+    "slug": "utensil"
+  }
+]

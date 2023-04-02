@@ -1,0 +1,29 @@
+@import "assets/styles/_functions.scss";
+
+.header-top {
+  border-bottom: 1px solid var(--border-color);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: to-rem(14px) 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    @media (max-width: 992px) {
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  &__nav {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+}

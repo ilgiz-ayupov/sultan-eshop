@@ -1,0 +1,8 @@
+@import "assets/styles/_functions.scss";
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(to-rem(140px), 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(to-rem(140px), to-rem(250px)));
+  gap: to-rem(20px);
+}

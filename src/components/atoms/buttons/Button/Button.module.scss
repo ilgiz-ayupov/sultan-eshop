@@ -1,0 +1,53 @@
+@import "assets/styles/functions";
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+
+  color: var(--white);
+  background: var(--accent);
+  font-size: to-rem(14px);
+  font-weight: 700;
+  padding: to-em(14px, 20px) to-em(14px, 52px);
+  border: 2px solid transparent;
+  border-radius: to-em(14px, 79px);
+  transition: all 300ms ease;
+
+  &:hover {
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    background: var(--white);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  span {
+    &:not(:last-child) {
+      margin-right: to-em(14px, 12px);
+    }
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+
+  // Sizes
+  &--small {
+    font-size: 12px;
+    padding: to-em(12px, 12.5px) to-em(12px, 30px);
+
+    svg {
+      width: to-rem(13px);
+      height: to-rem(13px);
+    }
+  }
+
+  &--big {
+    font-size: to-rem(18px);
+    padding: to-em(18px, 34px) to-em(18px, 77px);
+  }
+}

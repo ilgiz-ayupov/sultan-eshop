@@ -1,0 +1,19 @@
+@import "assets/styles/_functions.scss";
+
+.box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: to-rem(70px);
+  margin-bottom: to-em(70px, 20px);
+}
+
+.desc {
+  font-size: to-rem(20px);
+  margin-bottom: to-em(20px, 15px);
+}

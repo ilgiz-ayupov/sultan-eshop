@@ -1,0 +1,38 @@
+@import "assets/styles/_functions.scss";
+
+.menu {
+  display: flex;
+  margin: to-rem(45px) 0 to-rem(50px);
+
+  @media (max-width: 768px) {
+    margin: to-rem(20px) 0 to-rem(25px);
+  }
+
+  &__item {
+    display: flex;
+    color: rgba(63, 78, 101, 0.5);
+    font-weight: 300;
+    font-size: to-rem(14px);
+    line-height: 1.2;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+        border-left: 1px dashed var(--border-color);
+        margin: 0 to-rem(10px);
+      }
+    }
+  }
+
+  &__link {
+    color: var(--blue);
+    transition: color 300ms ease;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "assets/styles/_functions.scss";
+
+.counter {
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+
+  &__btn {
+    $base-font-size: 12px;
+
+    cursor: pointer;
+    font-weight: 300;
+    font-size: to-rem($base-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: to-rem(34px);
+    height: to-rem(20px);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 198, 80, 0.3) 0%,
+      rgba(254, 202, 110, 0.3) 97.25%
+    );
+    border: none;
+    border-radius: 1000px;
+    transition: transform 300ms ease;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &__result {
+    $base-font-size: 14px;
+
+    display: inline-block;
+    width: to-rem($base-font-size);
+    font-weight: 500;
+    font-size: to-rem($base-font-size);
+
+    margin: 0 to-em($base-font-size, 20px);
+  }
+}

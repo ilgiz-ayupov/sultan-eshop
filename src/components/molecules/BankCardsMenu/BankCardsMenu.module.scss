@@ -1,0 +1,16 @@
+@import "assets/styles/_functions.scss";
+
+.menu {
+  display: flex;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: to-rem(5px);
+    }
+
+    img {
+      display: block;
+      border-radius: to-rem(5px);
+    }
+  }
+}

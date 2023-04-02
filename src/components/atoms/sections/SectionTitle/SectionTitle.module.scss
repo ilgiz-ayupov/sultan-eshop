@@ -1,0 +1,19 @@
+.title {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-bottom: var(--size-base);
+  }
+
+  @media (max-width: 576px) {
+    font-size: var(--size-xl);
+  }
+
+  :global(.accent) {
+    font-weight: 800;
+    color: var(--accent);
+  }
+}

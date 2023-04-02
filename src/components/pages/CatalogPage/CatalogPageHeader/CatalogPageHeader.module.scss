@@ -1,0 +1,16 @@
+@import "assets/styles/_functions.scss";
+
+.header {
+  margin-bottom: to-rem(25px);
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: to-rem(10px);
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
+  }
+}

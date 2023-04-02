@@ -1,0 +1,10 @@
+@import "assets/styles/_functions.scss";
+
+.form {
+  &__title {
+    font-weight: 400;
+    font-size: to-rem(12px);
+    line-height: 1.5;
+    margin-bottom: to-em(12px, 14px);
+  }
+}

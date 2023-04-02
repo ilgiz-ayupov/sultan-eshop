@@ -1,0 +1,13 @@
+.title {
+  font-weight: 500;
+  font-size: to-rem(40px);
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: to-rem(30px);
+  }
+
+  @media (max-width: 576px) {
+    font-size: to-rem(20px);
+  }
+}

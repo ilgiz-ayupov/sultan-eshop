@@ -1,0 +1,20 @@
+@import "assets/styles/_functions.scss";
+
+.socials {
+  &__title {
+    font-weight: 400;
+    font-size: to-rem(14px);
+    word-break: break-all;
+    margin-bottom: to-em(14px, 10px);
+
+    @media (max-width: 375px) {
+      font-size: to-rem(12px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: to-rem(10px);
+  }
+}

@@ -1,0 +1,126 @@
+@import "assets/styles/_functions.scss";
+
+.contacts {
+  position: relative;
+  height: to-rem(600px);
+  background: url(/assets/images/map.jpg) no-repeat;
+  background-position: center;
+
+  @media (max-width: 576px) {
+    background: url(/assets/images/map-mobile.jpg) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+  }
+
+  &__box {
+    position: absolute;
+    top: to-rem(30px);
+    left: to-rem(30px);
+    padding: to-rem(60px) to-rem(50px) to-rem(70px);
+    max-width: 57.5%;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: to-rem(8px);
+
+    @media (max-width: 992px) {
+      top: to-rem(16px);
+      left: to-rem(16px);
+      max-width: 63%;
+      padding: to-rem(24px) to-rem(16px) to-rem(40px);
+    }
+    @media (max-width: 768px) {
+      max-width: 70%;
+    }
+    @media (max-width: 576px) {
+      top: to-rem(24px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: to-rem(270px);
+      max-width: initial;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: to-rem(40px);
+    line-height: 1.2;
+    color: var(--blue);
+    margin-bottom: 0.1em;
+
+    @media (max-width: 992px) {
+      font-size: to-rem(20px);
+    }
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: to-rem(20px);
+    line-height: 1.2;
+    color: var(--blue);
+    margin-bottom: 0.8em;
+
+    @media (max-width: 992px) {
+      font-size: to-rem(14px);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: to-rem(24px);
+    flex-wrap: wrap;
+  }
+}
+
+.contact-block {
+  flex: 1 0 50%;
+
+  &:first-of-type {
+    flex: 1 0 calc(50% - to-rem(24px));
+  }
+
+  &:not(:last-of-type) {
+    padding-bottom: to-rem(24px);
+    border-bottom: 1px dashed rgba(63, 78, 101, 0.2);
+
+    @media (max-width: 992px) {
+      padding-bottom: to-rem(24px);
+    }
+  }
+
+  @media (max-width: 720px) {
+    flex: 1 0 100%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: to-rem(14px);
+    line-height: 1.3;
+    margin-bottom: 0.2em;
+
+    @media (max-width: 720px) {
+      margin-left: 0 !important;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: to-rem(10px);
+
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &__info {
+    p {
+      font-size: to-rem(14px);
+      line-height: 1.3;
+      color: var(--blue);
+    }
+  }
+}

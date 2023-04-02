@@ -1,0 +1,67 @@
+@import "assets/styles/_functions.scss";
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: to-rem(20px);
+  padding: to-rem(65px) 0 to-rem(80px);
+
+  @media(max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__image {
+    text-align: center;
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__status {
+    font-weight: 500;
+    font-size: to-rem(14px);
+    color: var(--green);
+    margin-bottom: to-em(14px, 10px);
+  }
+
+  &__title {
+    font-size: to-rem(30px);
+    margin-bottom: to-em(30px, 10px);
+
+    @media(max-width: 768px) {
+        font-size: to-rem(24px)
+    }
+
+    strong {
+      font-weight: 800;
+      margin-right: 0.2em;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__volume {
+    margin-bottom: to-rem(25px);
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: to-rem(20px);
+    margin-bottom: to-rem(20px);
+  }
+
+  &__price {
+    font-weight: 800;
+    font-size: to-rem(30px);
+
+    @media(max-width: 768px) {
+        font-size: to-rem(20px);
+    }
+  }
+}

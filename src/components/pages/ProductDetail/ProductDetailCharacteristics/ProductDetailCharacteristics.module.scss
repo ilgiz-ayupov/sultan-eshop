@@ -1,0 +1,21 @@
+@import "assets/styles/_functions.scss";
+
+.menu {
+  &__item {
+    &:not(:last-child) {
+        margin-bottom: to-rem(5px);
+    }
+  }
+
+  &__key {
+    font-weight: 300;
+    font-size: to-rem(14px);
+    margin-right: 0.2em;
+    color: var(--blue);
+  }
+
+  &__value {
+    font-weight: 500;
+    font-size: to-rem(14px);
+  }
+}

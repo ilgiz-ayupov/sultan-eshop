@@ -1,0 +1,31 @@
+@import "assets/styles/functions";
+
+.contacts {
+  display: flex;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: to-rem(40px);
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  &__info {
+    font-size: to-rem(14px);
+    margin-left: to-em(14px, 5px);
+    line-height: 1.3;
+
+    strong {
+      font-weight: 600;
+    }
+
+    p {
+      font-size: to-em(14px, 12px);
+      font-weight: 300;
+    }
+  }
+}

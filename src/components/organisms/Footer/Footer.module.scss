@@ -1,0 +1,128 @@
+@import "assets/styles/_functions.scss";
+
+.footer {
+  padding-top: to-rem(70px);
+  padding-bottom: to-rem(112px);
+  background: var(--blue);
+  line-height: 1.5;
+  color: var(--white);
+
+  @media (max-width: 768px) {
+    padding-top: to-rem(32px);
+    padding-bottom: to-rem(48px);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: to-rem(30px) to-rem(24px);
+    flex-wrap: wrap;
+  }
+
+  &__first-col,
+  &__col {
+    flex: 1 0 auto;
+  }
+
+  &__first-col {
+    @media (max-width: 576px) {
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__price-list {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__call-center-card {
+    text-align: left;
+  }
+
+  &__socials {
+    &-mobile {
+      display: none;
+
+      @media (max-width: 576px) {
+        display: block;
+        margin-left: auto;
+      }
+      @media (max-width: 375px) {
+        br {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+.first-col {
+  font-size: to-rem(16px);
+  @media (max-width: 576px) {
+    font-size: to-rem(12px);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: to-rem(15px);
+  }
+
+  &__price-list-btn {
+    display: none;
+
+    @media (max-width: 576px) {
+      display: inline-block;
+    }
+  }
+
+  &__desc {
+    margin-bottom: to-rem(45px);
+
+    @media (max-width: 576px) {
+      margin-bottom: to-rem(20px);
+    }
+  }
+
+  &__subscribe-form {
+    max-width: 70%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.col {
+  font-size: to-rem(14px);
+  color: var(--white);
+  @media (max-width: 576px) {
+    font-size: to-rem(12px);
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: to-rem(20px);
+    margin-bottom: 0.5em;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 0.6em;
+    }
+  }
+
+  &__link {
+    transition: color 300ms ease;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

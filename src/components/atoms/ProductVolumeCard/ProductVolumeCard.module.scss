@@ -1,0 +1,17 @@
+.volume {
+  grid-area: volume;
+  font-size: to-rem(14px);
+  line-height: 1.3;
+  color: var(--blue);
+
+  display: flex;
+  align-items: center;
+
+  svg {
+    opacity: 0.2;
+  }
+
+  span {
+    margin-left: 0.5em;
+  }
+}

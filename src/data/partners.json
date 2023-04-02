@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Air Wick",
+    "img": "/assets/images/partners/partner-1.png",
+    "link": "https://www.airwick.ru/"
+  },
+  {
+    "name": "Master Fresh",
+    "img": "/assets/images/partners/partner-2.png",
+    "link": "https://market.yandex.ru/brands--master-fresh/13055376"
+  },
+  {
+    "name": "Сибиар",
+    "img": "/assets/images/partners/partner-3.png",
+    "link": "https://sibiar.ru/"
+  },
+  {
+    "name": "Cotton Club",
+    "img": "/assets/images/partners/partner-4.png",
+    "link": "/"
+  },
+  {
+    "name": "Camay France",
+    "img": "/assets/images/partners/partner-5.png",
+    "link": "http://www.camayeurope.com/"
+  },
+  {
+    "name": "Johnsons",
+    "img": "/assets/images/partners/partner-6.png",
+    "link": "https://www.jnj.com/"
+  },
+  {
+    "name": "Colgate",
+    "img": "/assets/images/partners/partner-7.png",
+    "link": "https://www.colgate.ru/"
+  },
+  {
+    "name": "Nivea",
+    "img": "/assets/images/partners/partner-8.png",
+    "link": "https://www.nivea.com/"
+  },
+  {
+    "name": "Невская косметика",
+    "img": "/assets/images/partners/partner-9.png",
+    "link": "https://www.nevcos.ru/"
+  },
+  {
+    "name": "Nefis",
+    "img": "/assets/images/partners/partner-10.png",
+    "link": "https://www.nefisyemektarifleri.com/"
+  }
+]

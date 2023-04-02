@@ -1,0 +1,34 @@
+@import "assets/styles/_functions.scss";
+
+.link {
+  transition: transform 300ms ease;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.logo {
+  max-width: to-rem(156px);
+
+  @media (max-width: 992px) {
+    max-width: to-rem(140px);
+  }
+
+  @media (max-width: 576px) {
+    max-width: to-rem(120px);
+  }
+
+  @media(max-width: 375px) {
+    max-width: to-rem(96px)
+  }
+
+  // Colors
+  &--blue {
+    color: var(--blue);
+  }
+
+  &--white {
+    color: var(--white);
+  }
+}

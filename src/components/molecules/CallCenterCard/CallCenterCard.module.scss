@@ -1,0 +1,50 @@
+@import "assets/styles/_functions.scss";
+
+.card {
+  display: flex;
+  align-items: center;
+
+  &__phone {
+    font-weight: 600;
+    font-size: to-rem(14px);
+    line-height: 1.5;
+  }
+
+  &__worktime {
+    font-weight: 300;
+    font-size: to-rem(12px);
+    line-height: 1.5;
+  }
+
+  &__call {
+    font-size: to-rem(10px);
+    line-height: 1.5;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  &__operator {
+    margin-left: to-rem(14px);
+
+    @media (max-width: 1350px) {
+      display: none;
+    }
+
+    img {
+      width: to-rem(70px);
+      height: to-rem(92px);
+    }
+  }
+}
+
+.content {
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}

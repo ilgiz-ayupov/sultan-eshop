@@ -1,0 +1,59 @@
+@import "assets/styles/_functions.scss";
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  transition: transform 300ms ease;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &__iconbox {
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25%, 0%);
+    width: to-rem(24px);
+    height: to-rem(24px);
+    background: var(--accent);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: to-rem(14px);
+    color: var(--white);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: to-rem(14px);
+
+    @media(max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__name {
+    font-weight: 300;
+    font-size: to-rem(12px);
+    line-height: 1.5;
+    color: var(--blue);
+  }
+
+  &__price {
+    display: inline-block;
+    width: to-rem(75px);
+    font-weight: 600;
+    font-size: to-rem(14px);
+    line-height: 1.5;
+  }
+}

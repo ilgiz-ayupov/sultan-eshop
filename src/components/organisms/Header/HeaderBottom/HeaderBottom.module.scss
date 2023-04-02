@@ -1,0 +1,53 @@
+@import "assets/styles/_functions.scss";
+
+.header-bottom {
+  display: none;
+
+  @media (max-width: 768px) {
+    position: sticky;
+    top: to-rem(89px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--white);
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.btn {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  line-height: 1;
+
+  font-weight: 600;
+  font-size: to-rem(12px);
+  padding: to-em(12px, 12px) 0;
+  line-height: 1.25;
+  color: var(--blue);
+  background: none;
+  border: 0;
+  transition: all 300ms ease;
+
+  &:not(:last-child) {
+    border-right: 1px dashed var(--border-color);
+  }
+
+  &:hover {
+    background: var(--gray);
+    color: var(--white);
+  }
+
+  &__icon {
+    margin-right: to-em(12px, 6px);
+  }
+}

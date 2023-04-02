@@ -1,0 +1,29 @@
+@import "assets/styles/_functions.scss";
+
+.card {
+  &__img {
+    max-width: 100%;
+
+    &-wrapper {
+      border-radius: to-rem(20px);
+      box-shadow: 0px 14px 39px -3px rgba(0, 0, 0, 0.06);
+      background: rgba(188, 165, 120, 0.1);
+      margin-bottom: to-rem(20px);
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    transition: color 300ms ease;
+    
+    @media (max-width: 576px) {
+      font-size: to-rem(12px);
+    }
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

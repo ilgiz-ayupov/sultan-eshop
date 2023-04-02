@@ -1,0 +1,12 @@
+[
+  {
+    "name": "WhatsApp",
+    "logo": "/assets/images/socials/whatsapp.svg",
+    "link": "https://www.whatsapp.com/"
+  },
+  {
+    "name": "Telegram",
+    "logo": "/assets/images/socials/telegram.svg",
+    "link": "https://web.telegram.org/z/"
+  }
+]

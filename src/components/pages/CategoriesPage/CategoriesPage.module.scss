@@ -1,0 +1,12 @@
+@import "assets/styles/_functions.scss";
+
+.pageRow {
+  margin: to-rem(65px) 0 to-rem(80px);
+  @media (max-width: 768px) {
+    margin: to-rem(35px) 0 to-rem(50px);
+  }
+}
+
+.pageTitle {
+  margin: to-rem(50px) 0 to-rem(25px);
+}

@@ -1,0 +1,11 @@
+@import "assets/styles/_functions.scss";
+
+.header {
+  margin-bottom: to-rem(50px);
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

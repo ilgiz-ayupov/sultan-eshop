@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Ср-во для мытья посуды Апельсин+мята",
+    "brand": "AOS",
+    "img": "/assets/images/products/product-1.png",
+    "isPopular": true,
+    "volume": {
+      "qty": "450 мл",
+      "unit": "мл"
+    },
+    "barcode": "4604049097548",
+    "producerName": "Нэфис",
+    "price": 48.75,
+    "categorySlug": "household-chemicals"
+  },
+  {
+    "id": 2,
+    "title": "средство для мытья посуды Crystal",
+    "brand": "AOS",
+    "img": "/assets/images/products/product-2.png",
+    "isPopular": true,
+    "volume": {
+      "qty": "450 мл",
+      "unit": "мл"
+    },
+    "barcode": "9835093898094",
+    "producerName": "Нэфис",
+    "price": 52.25,
+    "categorySlug": "household-chemicals"
+  },
+  {
+    "id": 3,
+    "title": "Автомат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+    "brand": "ARIEL",
+    "img": "/assets/images/products/product-3.png",
+    "isPopular": true,
+    "volume": {
+      "qty": "15X28.8 г",
+      "unit": "мл"
+    },
+    "barcode": "3434533544234",
+    "producerName": "Нэфис",
+    "price": 65.15,
+    "categorySlug": "household-chemicals"
+  },
+  {
+    "id": 4,
+    "title": "Порошок стиральный Автомат 100 пятен COMPACT",
+    "brand": "BIMAX",
+    "img": "/assets/images/products/product-4.png",
+    "isPopular": true,
+    "volume": {
+      "qty": "1500 г",
+      "unit": "г"
+    },
+    "barcode": "5453453543453",
+    "producerName": "Нэфис",
+    "price": 75.25,
+    "categorySlug": "household-chemicals"
+  }
+]

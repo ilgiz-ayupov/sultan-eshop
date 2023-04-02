@@ -1,0 +1,18 @@
+:root {
+  --main-font: "Inter", sans-serif;
+
+  // Colors
+  --white: #fff;
+  --black: #111111; // 1
+  --blue: #3f4e65; // 2
+  --sky-600: linear-gradient(180deg, #6cd0e9 14.1%, #6cade9 57.69%); // 3
+  --sky-900: linear-gradient(90deg, #39acfd 0%, #5eb9ff 97.25%); // 4
+  --yellow: #ffc85e; // 5, 6
+  --orange: #f3a50d; // 7
+  --green: #1fd85d;
+  --gray: #5c6370;
+
+  --accent: var(--yellow);
+  --border-color: rgba(63, 78, 101, 0.2);
+  --shadow-color: rgba(63, 78, 101, 0.5);
+}
