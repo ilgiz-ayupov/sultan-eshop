@@ -6,7 +6,7 @@
     "img": "/assets/images/products/product-1.png",
     "isPopular": true,
     "volume": {
-      "qty": "450 мл",
+      "qty": 450,
       "unit": "мл"
     },
     "barcode": "4604049097548",
@@ -21,7 +21,7 @@
     "img": "/assets/images/products/product-2.png",
     "isPopular": true,
     "volume": {
-      "qty": "450 мл",
+      "qty": 450,
       "unit": "мл"
     },
     "barcode": "9835093898094",
@@ -36,7 +36,7 @@
     "img": "/assets/images/products/product-3.png",
     "isPopular": true,
     "volume": {
-      "qty": "15X28.8 г",
+      "qty": 28.8,
       "unit": "мл"
     },
     "barcode": "3434533544234",
@@ -51,12 +51,148 @@
     "img": "/assets/images/products/product-4.png",
     "isPopular": true,
     "volume": {
-      "qty": "1500 г",
+      "qty": 1500,
       "unit": "г"
     },
     "barcode": "5453453543453",
     "producerName": "Нэфис",
     "price": 75.25,
     "categorySlug": "household-chemicals"
+  },
+  {
+    "id": 5,
+    "title": "Shampoo",
+    "brand": "XYZ",
+    "img": "https://placehold.co/200x220",
+    "isPopular": true,
+    "volume": {
+      "qty": 500,
+      "unit": "мл"
+    },
+    "barcode": "1234567890",
+    "producerName": "ABC Company",
+    "desc": "For all hair types",
+    "price": 10.99,
+    "type": "Уход за волосами",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 6,
+    "title": "Шампунь для волос",
+    "brand": "L'Oreal",
+    "img": "https://placehold.co/200x220",
+    "isPopular": false,
+    "volume": {
+      "qty": 250,
+      "unit": "мл"
+    },
+    "barcode": "1234567890123",
+    "producerName": "Франция",
+    "desc": "Шампунь для волос с экстрактом ромашки и маслом жожоба",
+    "price": 12.25,
+    "type": "Для укрепления волос",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 7,
+    "title": "Гель для душа",
+    "brand": "Nivea",
+    "img": "https://placehold.co/200x220",
+    "isPopular": false,
+    "volume": {
+      "qty": 500,
+      "unit": "мл"
+    },
+    "barcode": "1234567890124",
+    "producerName": "Германия",
+    "desc": "Гель для душа с маслом жожоба и алоэ вера",
+    "price": 22.75,
+    "type": "Увлажнение кожи",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 8,
+    "title": "Зубная паста",
+    "brand": "Colgate",
+    "img": "https://placehold.co/200x220",
+    "isPopular": false,
+    "volume": {
+      "qty": 100,
+      "unit": "мл"
+    },
+    "barcode": "1234567890125",
+    "producerName": "США",
+    "desc": "Зубная паста с ментолом и фтором",
+    "price": 2.5,
+    "type": "Для здоровых зубов",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 9,
+    "title": "Шампунь для сухих волос",
+    "brand": "L'Oreal Professional",
+    "img": "https://placehold.co/200x220",
+    "isPopular": false,
+    "volume": {
+      "qty": 250,
+      "unit": "мл"
+    },
+    "barcode": "1234567890125",
+    "producerName": "Франция",
+    "desc": "Шампунь для сухих волос из линии Nutrifier",
+    "price": 8.5,
+    "type": "Для сухих волос",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 10,
+    "title": "Гель для душа",
+    "brand": "Dove",
+    "img": "https://placehold.co/200x220",
+    "isPopular": true,
+    "volume": {
+      "qty": 500,
+      "unit": "мл"
+    },
+    "barcode": "1234567890127",
+    "producerName": "Россия",
+    "desc": "Гель для душа с маслом кокоса и молочными протеинами",
+    "price": 5.5,
+    "type": "Увлажнение кожи",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 11,
+    "title": "Зубная паста",
+    "brand": "Sensodyne",
+    "img": "https://placehold.co/200x220",
+    "isPopular": false,
+    "volume": {
+      "qty": 75,
+      "unit": "мл"
+    },
+    "barcode": "1234567890128",
+    "producerName": "Великобритания",
+    "desc": "Зубная паста для чувствительных зубов с фтором и калием",
+    "price": 5.75,
+    "type": "Для здоровых зубов",
+    "categorySlug": "cosmetics-hygiene"
+  },
+  {
+    "id": 12,
+    "title": "Крем для лица",
+    "brand": "Natura Siberica",
+    "img": "https://placehold.co/200x220",
+    "isPopular": true,
+    "volume": {
+      "qty": 50,
+      "unit": "мл"
+    },
+    "barcode": "1234567890129",
+    "producerName": "Россия",
+    "desc": "Крем для лица на основе морских водорослей и масла облепихи",
+    "price": 9.15,
+    "type": "Для увлажнения кожи",
+    "categorySlug": "cosmetics-hygiene"
   }
 ]

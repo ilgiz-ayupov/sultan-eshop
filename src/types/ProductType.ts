@@ -1,18 +1,18 @@
-export type VolumeType = {
-  qty: string;
-  unit: "мл" | "г";
-};
+import { ProductVolumeType } from "./ProductVolumeType";
+import { CategorySlugType } from "./CategorySlugType";
 
 export interface ProductType {
   id: number;
   title: string;
-  desc: string;
   barcode: string;
   producerName: string;
   brand: string;
   price: number;
   img: string;
-  isPopular: boolean;
-  volume: VolumeType;
-  categorySlug: string;
+  volume: ProductVolumeType;
+  categorySlug: CategorySlugType;
+
+  type?: string;
+  desc?: string;
+  isPopular?: boolean;
 }

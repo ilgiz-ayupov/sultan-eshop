@@ -16,7 +16,11 @@ export const productSlice = createSlice({
 
 // Selectors
 export const selectPromoProducts = (state: RootState) => {
-  return state.products.filter((product) => product.isPopular);
+  const result = state.products
+    .filter((product) => product.isPopular)
+    .slice(0, 12);
+  result.sort(() => Math.random() - 0.5);
+  return result;
 };
 
 export const selectProductById = (id: number) => {
