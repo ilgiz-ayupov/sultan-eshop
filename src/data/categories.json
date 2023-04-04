@@ -7,7 +7,53 @@
   {
     "name": "Косметика и гигиена",
     "img": "/assets/images/categories/category-2.png",
-    "slug": "cosmetics-hygiene"
+    "slug": "cosmetics-hygiene",
+    "types": [
+      {
+        "name": "Уход\n за телом",
+        "options": ["Эпиляция и депиляция", "Средства для ванны и душа"]
+      },
+      {
+        "name": "Уход\n за руками",
+        "options": []
+      },
+      {
+        "name": "Уход\n за ногами",
+        "options": []
+      },
+      {
+        "name": "Уход\n за лицом",
+        "options": []
+      },
+      {
+        "name": "Уход\n за волосами",
+        "options": []
+      },
+      {
+        "name": "Средства\n для загара",
+        "options": []
+      },
+      {
+        "name": "Средства\n для бритья",
+        "options": []
+      },
+      {
+        "name": "Подарочные\n наборы",
+        "options": []
+      },
+      {
+        "name": "Гигиеническая\n продукция",
+        "options": []
+      },
+      {
+        "name": "Гигиена\n полости рта",
+        "options": []
+      },
+      {
+        "name": "Бумажная\n продукция",
+        "options": []
+      }
+    ]
   },
   {
     "name": "Товары для дома",

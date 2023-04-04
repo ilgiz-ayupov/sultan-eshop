@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 import { Link } from "react-router-dom";
 
-import { useAppSelector } from "hooks";
+import { useAppSelector } from "hooks/redux";
 import { selectCart } from "store/slices/cartSlice";
 
 import { ReactComponent as CartIcon } from "assets/icons/cart.svg";

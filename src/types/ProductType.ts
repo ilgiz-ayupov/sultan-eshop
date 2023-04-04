@@ -1,5 +1,5 @@
 import { ProductVolumeType } from "./ProductVolumeType";
-import { CategorySlugType } from "./CategorySlugType";
+import { ProductCategoryType } from "./ProductCategoryType";
 
 export interface ProductType {
   id: number;
@@ -10,9 +10,7 @@ export interface ProductType {
   price: number;
   img: string;
   volume: ProductVolumeType;
-  categorySlug: CategorySlugType;
-
-  type?: string;
+  category: ProductCategoryType;
   desc?: string;
   isPopular?: boolean;
 }

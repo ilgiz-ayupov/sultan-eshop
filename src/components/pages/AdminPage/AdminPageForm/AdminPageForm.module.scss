@@ -1,0 +1,48 @@
+@import "assets/styles/_functions.scss";
+
+.form {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: to-rem(60px);
+
+  &__control {
+    &:not(:last-child) {
+      margin-bottom: to-rem(20px);
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    color: var(--blue);
+    font-size: to-rem(16px);
+    margin-bottom: to-rem(8px);
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: to-rem(10px) to-rem(8px);
+    border: 2px solid var(--gray);
+    border-radius: to-rem(5px);
+    outline: none;
+    background: var(--white);
+
+    &:focus {
+      border: 2px solid var(--accent);
+    }
+  }
+
+  &__select {
+    display: block;
+    width: 100%;
+    padding: to-rem(10px) to-rem(8px);
+    border: 2px solid var(--gray);
+    border-radius: to-rem(5px);
+    outline: none;
+    background: var(--white);
+
+    &:focus {
+      border: 2px solid var(--accent);
+    }
+  }
+}

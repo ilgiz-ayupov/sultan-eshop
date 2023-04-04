@@ -1,7 +1,1 @@
-@import "assets/styles/_functions.scss";
 
-.menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(to-rem(290px), 1fr));
-  gap: to-rem(20px);
-}

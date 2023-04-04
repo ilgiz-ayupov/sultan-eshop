@@ -1,0 +1,17 @@
+@import "assets/styles/_functions.scss";
+
+.menu {
+  display: grid;
+  gap: to-rem(20px);
+  grid-template-columns: repeat(4, 1fr);
+
+  @media(max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media(max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

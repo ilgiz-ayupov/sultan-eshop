@@ -1,0 +1,7 @@
+@import "assets/styles/_functions.scss";
+
+.title {
+  font-size: to-rem(20px);
+  font-weight: 400;
+  margin: to-rem(30px) 0 to-rem(60px);
+}

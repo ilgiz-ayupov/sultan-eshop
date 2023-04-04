@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useAppSelector } from "hooks";
+import { useAppSelector } from "hooks/redux";
 import { selectCart } from "store/slices/cartSlice";
 
 import { BreadCrumbs } from "components/molecules";

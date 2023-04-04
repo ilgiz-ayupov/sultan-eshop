@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "components/atoms";
 
-import { useAppDispatch } from "hooks";
+import { useAppDispatch } from "hooks/redux";
 import { deleteFromCart } from "store/slices/cartSlice";
 
 import { CartProductType } from "types/CartProductType";

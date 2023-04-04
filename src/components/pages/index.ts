@@ -3,6 +3,7 @@ import CatalogPage from "./CatalogPage/CatalogPage";
 import ProductDetail from "./ProductDetail/ProductDetail";
 import CartPage from "./CartPage/CartPage";
 import CategoriesPage from "./CategoriesPage/CategoriesPage";
+import AdminPage from "./AdminPage/AdminPage";
 import ErrorPage from "./ErrorPage/ErrorPage";
 
 export {
@@ -11,5 +12,6 @@ export {
   ProductDetail,
   CartPage,
   CategoriesPage,
+  AdminPage,
   ErrorPage,
 };

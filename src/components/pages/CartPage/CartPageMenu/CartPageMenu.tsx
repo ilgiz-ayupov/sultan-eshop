@@ -2,6 +2,8 @@ import React from "react";
 import { nanoid } from "@reduxjs/toolkit";
 
 import { CartProductType } from "types/CartProductType";
+
+import { EmptyMenuTitle } from "components/atoms";
 import { CartProductCard } from "components/molecules";
 
 import styles from "./CartPageMenu.module.scss";
@@ -14,7 +16,7 @@ const CartPageMenu: React.FC<CartPageMenuProps> = ({ cartProducts }) => {
   if (cartProducts.length === 0) {
     return (
       <div className="container">
-        <p className={styles["empty-menu"]}>Ваша корзина пуста</p>
+        <EmptyMenuTitle>Ваша корзина пуста</EmptyMenuTitle>
       </div>
     );
   }

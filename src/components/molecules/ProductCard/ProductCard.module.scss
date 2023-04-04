@@ -1,6 +1,7 @@
 @import "assets/styles/_functions.scss";
 
 .card {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto minmax(12rem, 14rem) auto;

@@ -1,8 +1,7 @@
 import { CategoryTypeType } from "./CategoryTypeType";
 
-export interface CategoryType {
+export interface ProductCategoryType {
   name: string;
-  img: string;
   slug: string;
-  types?: CategoryTypeType[];
+  type: CategoryTypeType;
 }

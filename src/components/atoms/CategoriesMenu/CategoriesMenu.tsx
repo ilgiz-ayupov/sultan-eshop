@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import { CategoryCard } from "components/molecules";
 
-import { useAppSelector } from "hooks";
+import { useAppSelector } from "hooks/redux";
 import { selectAllCategories } from "store/slices/categorySlice";
 
 import styles from "./CategoriesMenu.module.scss";

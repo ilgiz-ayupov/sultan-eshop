@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useAppDispatch } from "hooks";
+import { useAppDispatch } from "hooks/redux";
 import { addToCart } from "store/slices/cartSlice";
 
 import { ProductType } from "types/ProductType";

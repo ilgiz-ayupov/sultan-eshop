@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
 
-import { useAppDispatch } from "hooks";
+import { useAppDispatch } from "hooks/redux";
 import { changeQty } from "store/slices/cartSlice";
 
 import styles from "./ProductCounterCard.module.scss";

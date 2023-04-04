@@ -8,6 +8,7 @@ import {
   ProductDetail,
   CartPage,
   CategoriesPage,
+  AdminPage,
   ErrorPage,
 } from "./pages";
 import store from "store";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <CartPage />,
+  },
+  {
+    path: "/admin",
+    element: <AdminPage />,
   },
 ]);
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import { useAppSelector } from "hooks";
+import { useAppSelector } from "hooks/redux";
 import { selectProductById } from "store/slices/productSlice";
 import { selectCartProduct } from "store/slices/cartSlice";
 

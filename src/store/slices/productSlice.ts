@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 import { RootState } from "store";
 import { ProductType } from "types/ProductType";
@@ -11,8 +11,15 @@ const initialState = PRODUCTS as ProductType[];
 export const productSlice = createSlice({
   name: "products",
   initialState,
-  reducers: {},
+  reducers: {
+    addProduct(state, payload: PayloadAction<{ product: ProductType }>) {
+      state.push(payload.payload.product);
+    },
+  },
 });
+
+// Actions;
+export const { addProduct } = productSlice.actions;
 
 // Selectors
 export const selectPromoProducts = (state: RootState) => {
@@ -26,5 +33,11 @@ export const selectPromoProducts = (state: RootState) => {
 export const selectProductById = (id: number) => {
   return (state: RootState) => {
     return state.products.find((product) => product.id === id);
+  };
+};
+
+export const selectProductsByCategorySlug = (slug: string) => {
+  return (state: RootState) => {
+    return state.products.filter((product) => product.category.slug === slug);
   };
 };

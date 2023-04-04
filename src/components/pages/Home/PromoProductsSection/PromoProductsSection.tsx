@@ -1,12 +1,14 @@
 import React from "react";
 
-import { Section, SectionHeader, SectionTitle } from "components/atoms";
-import { ProductCard } from "components/molecules";
+import {
+  Section,
+  SectionHeader,
+  SectionTitle,
+  ProductsMenu,
+} from "components/atoms";
 
-import { useAppSelector } from "hooks";
+import { useAppSelector } from "hooks/redux";
 import { selectPromoProducts } from "store/slices/productSlice";
-
-import styles from "./PromoProductsSection.module.scss";
 
 const PromoProductsSection: React.FC = () => {
   const PRODUCTS = useAppSelector(selectPromoProducts);
@@ -20,11 +22,7 @@ const PromoProductsSection: React.FC = () => {
           </SectionTitle>
         </SectionHeader>
 
-        <div className={styles.menu}>
-          {PRODUCTS.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <ProductsMenu products={PRODUCTS} />
       </div>
     </Section>
   );

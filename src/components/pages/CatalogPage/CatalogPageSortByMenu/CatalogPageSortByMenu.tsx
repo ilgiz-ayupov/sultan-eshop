@@ -1,11 +1,7 @@
 import React from "react";
 
+import { OptionType } from "types/OptionType";
 import styles from "./CatalogPageSortByMenu.module.scss";
-
-type OptionType = {
-  label: string;
-  value: string;
-};
 
 const options: OptionType[] = [
   {
@@ -18,17 +14,22 @@ const options: OptionType[] = [
   },
 ];
 
-const SortBy: React.FC = () => {
+interface Props {
+  sortBy: OptionType | null;
+  setSortBy: (option: OptionType) => void;
+}
+
+const SortBy: React.FC<Props> = ({ sortBy, setSortBy }) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [selectedOption, setSelectedOption] = React.useState<OptionType>(
-    options[0]
-  );
 
   function handleOptionClick(option: OptionType) {
-    setSelectedOption(option);
+    setSortBy(option);
     setIsOpen(false);
   }
 
+  React.useEffect(() => {
+    setSortBy(options[0]);
+  }, [setSortBy]);
   return (
     <div className={styles.sortby}>
       <button
@@ -36,7 +37,7 @@ const SortBy: React.FC = () => {
         data-open={isOpen}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <strong>Сортировка:</strong> {selectedOption.label}
+        <strong>Сортировка:</strong> {sortBy?.label ?? ""}
       </button>
       {isOpen && (
         <ul className={styles.menu}>
@@ -44,7 +45,7 @@ const SortBy: React.FC = () => {
             <li
               className={styles.menu__item}
               key={option.value}
-              data-selected={option.value === selectedOption.value}
+              data-selected={option.value === sortBy?.value}
               onClick={() => handleOptionClick(option)}
             >
               {option.label}

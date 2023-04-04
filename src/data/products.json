@@ -12,7 +12,14 @@
     "barcode": "4604049097548",
     "producerName": "Нэфис",
     "price": 48.75,
-    "categorySlug": "household-chemicals"
+    "category": {
+      "name": "Бытовая химия",
+      "slug": "household-chemicals",
+      "type": {
+        "name": "",
+        "options": []
+      }
+    }
   },
   {
     "id": 2,
@@ -27,7 +34,14 @@
     "barcode": "9835093898094",
     "producerName": "Нэфис",
     "price": 52.25,
-    "categorySlug": "household-chemicals"
+    "category": {
+      "name": "Бытовая химия",
+      "slug": "household-chemicals",
+      "type": {
+        "name": "",
+        "options": []
+      }
+    }
   },
   {
     "id": 3,
@@ -42,7 +56,14 @@
     "barcode": "3434533544234",
     "producerName": "Нэфис",
     "price": 65.15,
-    "categorySlug": "household-chemicals"
+    "category": {
+      "name": "Бытовая химия",
+      "slug": "household-chemicals",
+      "type": {
+        "name": "",
+        "options": []
+      }
+    }
   },
   {
     "id": 4,
@@ -57,7 +78,14 @@
     "barcode": "5453453543453",
     "producerName": "Нэфис",
     "price": 75.25,
-    "categorySlug": "household-chemicals"
+    "category": {
+      "name": "Бытовая химия",
+      "slug": "household-chemicals",
+      "type": {
+        "name": "",
+        "options": []
+      }
+    }
   },
   {
     "id": 5,
@@ -73,8 +101,14 @@
     "producerName": "ABC Company",
     "desc": "For all hair types",
     "price": 10.99,
-    "type": "Уход за волосами",
-    "categorySlug": "cosmetics-hygiene"
+    "category": {
+      "name": "Косметика и гигиена",
+      "slug": "cosmetics-hygiene",
+      "type": {
+        "name": "Уход\n за волосами",
+        "options": ["Шампуни"]
+      }
+    }
   },
   {
     "id": 6,
@@ -90,8 +124,14 @@
     "producerName": "Франция",
     "desc": "Шампунь для волос с экстрактом ромашки и маслом жожоба",
     "price": 12.25,
-    "type": "Для укрепления волос",
-    "categorySlug": "cosmetics-hygiene"
+    "category": {
+      "name": "Косметика и гигиена",
+      "slug": "cosmetics-hygiene",
+      "type": {
+        "name": "Уход\n за волосами",
+        "options": ["Шампуни"]
+      }
+    }
   },
   {
     "id": 7,
@@ -107,28 +147,17 @@
     "producerName": "Германия",
     "desc": "Гель для душа с маслом жожоба и алоэ вера",
     "price": 22.75,
-    "type": "Увлажнение кожи",
-    "categorySlug": "cosmetics-hygiene"
+    "category": {
+      "name": "Косметика и гигиена",
+      "slug": "cosmetics-hygiene",
+      "type": {
+        "name": "Уход\n за телом",
+        "options": ["Гели для душа"]
+      }
+    }
   },
   {
     "id": 8,
-    "title": "Зубная паста",
-    "brand": "Colgate",
-    "img": "https://placehold.co/200x220",
-    "isPopular": false,
-    "volume": {
-      "qty": 100,
-      "unit": "мл"
-    },
-    "barcode": "1234567890125",
-    "producerName": "США",
-    "desc": "Зубная паста с ментолом и фтором",
-    "price": 2.5,
-    "type": "Для здоровых зубов",
-    "categorySlug": "cosmetics-hygiene"
-  },
-  {
-    "id": 9,
     "title": "Шампунь для сухих волос",
     "brand": "L'Oreal Professional",
     "img": "https://placehold.co/200x220",
@@ -142,10 +171,17 @@
     "desc": "Шампунь для сухих волос из линии Nutrifier",
     "price": 8.5,
     "type": "Для сухих волос",
-    "categorySlug": "cosmetics-hygiene"
+    "category": {
+      "name": "Косметика и гигиена",
+      "slug": "cosmetics-hygiene",
+      "type": {
+        "name": "Уход\n за волосами",
+        "options": ["Шампуни"]
+      }
+    }
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Гель для душа",
     "brand": "Dove",
     "img": "https://placehold.co/200x220",
@@ -158,28 +194,17 @@
     "producerName": "Россия",
     "desc": "Гель для душа с маслом кокоса и молочными протеинами",
     "price": 5.5,
-    "type": "Увлажнение кожи",
-    "categorySlug": "cosmetics-hygiene"
+    "category": {
+      "name": "Косметика и гигиена",
+      "slug": "cosmetics-hygiene",
+      "type": {
+        "name": "Уход\n за телом",
+        "options": ["Гели для душа"]
+      }
+    }
   },
   {
-    "id": 11,
-    "title": "Зубная паста",
-    "brand": "Sensodyne",
-    "img": "https://placehold.co/200x220",
-    "isPopular": false,
-    "volume": {
-      "qty": 75,
-      "unit": "мл"
-    },
-    "barcode": "1234567890128",
-    "producerName": "Великобритания",
-    "desc": "Зубная паста для чувствительных зубов с фтором и калием",
-    "price": 5.75,
-    "type": "Для здоровых зубов",
-    "categorySlug": "cosmetics-hygiene"
-  },
-  {
-    "id": 12,
+    "id": 10,
     "title": "Крем для лица",
     "brand": "Natura Siberica",
     "img": "https://placehold.co/200x220",
@@ -192,7 +217,13 @@
     "producerName": "Россия",
     "desc": "Крем для лица на основе морских водорослей и масла облепихи",
     "price": 9.15,
-    "type": "Для увлажнения кожи",
-    "categorySlug": "cosmetics-hygiene"
+    "category": {
+      "name": "Косметика и гигиена",
+      "slug": "cosmetics-hygiene",
+      "type": {
+        "name": "Уход\n за лицом",
+        "options": ["Крем для лица"]
+      }
+    }
   }
 ]
